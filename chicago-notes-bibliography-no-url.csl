@@ -68,6 +68,7 @@
       <term name="sub-verbo">under</term>
       <term form="short" name="sub-verbo">under</term>
       <term name="timestamp">at</term>
+      <term form="short" name="translator">trans.</term>
       <term form="verb-short" name="translator">trans.</term>
     </terms>
   </locale>
