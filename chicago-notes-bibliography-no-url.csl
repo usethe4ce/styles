@@ -896,23 +896,23 @@
       <if match="none" variable="container-title"/>
       <else-if match="any" type="article-magazine article-newspaper">
         <!-- Anonymous magazine/newspaper articles substitute name of publication (CMOS18 14.87, 14.97) -->
-        <text font-style="italic" text-case="title" variable="container-title"/>
+        <text font-style="italic" form="short" text-case="title" variable="container-title"/>
       </else-if>
       <else-if match="any" type="review review-book" variable="reviewed-author reviewed-genre reviewed-title">
         <!-- Publication name also substituted for unsigned reviews (CMOS18 14.102) -->
-        <text font-style="italic" text-case="title" variable="container-title"/>
+        <text font-style="italic" form="short" text-case="title" variable="container-title"/>
       </else-if>
       <else-if match="any" type="entry entry-dictionary entry-encyclopedia">
         <!-- Anonymous entries in reference works (CMOS18 14.130) -->
-        <text font-style="italic" text-case="title" variable="container-title"/>
+        <text font-style="italic" form="short" text-case="title" variable="container-title"/>
       </else-if>
       <else-if type="broadcast">
         <!-- TV broadcasts and podcasts (CMOS18 14.165, 14.168) -->
-        <text font-style="italic" text-case="title" variable="container-title"/>
+        <text font-style="italic" form="short" text-case="title" variable="container-title"/>
       </else-if>
       <else-if type="webpage">
         <!-- Website title substituted in bibliography only (CMOS18 14.104) -->
-        <text text-case="title" variable="container-title"/>
+        <text form="short" text-case="title" variable="container-title"/>
       </else-if>
     </choose>
   </macro>
@@ -3235,7 +3235,7 @@
   <!-- Serial source title -->
   <macro name="source-serial-name">
     <group delimiter=" ">
-      <text font-style="italic" text-case="title" variable="container-title"/>
+      <text font-style="italic" form="short" text-case="title" variable="container-title"/>
       <choose>
         <!-- TODO: remove conditional when Zotero stops double-mapping `event-place` and `publisher-place` -->
         <if match="none" variable="event-date event-title">
@@ -3749,12 +3749,12 @@
         <text font-style="italic" text-case="title" variable="volume-title"/>
       </else-if>
       <else>
-        <text font-style="italic" text-case="title" variable="container-title"/>
+        <text font-style="italic" form="short" text-case="title" variable="container-title"/>
       </else>
     </choose>
   </macro>
   <macro name="source-monographic-title-note">
-    <text font-style="italic" text-case="title" variable="container-title"/>
+    <text font-style="italic" form="short" text-case="title" variable="container-title"/>
   </macro>
   <!-- Monographic source description -->
   <macro name="source-monographic-description-bib">
@@ -4228,18 +4228,18 @@
     <group delimiter=", ">
       <choose>
         <if variable="issue">
-          <text text-case="title" variable="collection-title"/>
+          <text form="short" text-case="title" variable="collection-title"/>
           <text macro="label-collection-number"/>
           <text macro="label-issue"/>
         </if>
         <else-if is-numeric="collection-number" variable="collection-title">
           <group delimiter=" ">
-            <text text-case="title" variable="collection-title"/>
+            <text form="short" text-case="title" variable="collection-title"/>
             <text variable="collection-number"/>
           </group>
         </else-if>
         <else-if variable="collection-title">
-          <text text-case="title" variable="collection-title"/>
+          <text form="short" text-case="title" variable="collection-title"/>
           <text variable="collection-number"/>
         </else-if>
       </choose>
