@@ -4918,6 +4918,9 @@
         <if type="thesis" variable="publisher">
           <text text-case="capitalize-first" variable="publisher"/>
         </if>
+        <else-if variable="old-publisher">
+          <text text-case="capitalize-first" variable="publisher-place"/>
+        </else-if>
         <else-if variable="publisher">
           <group delimiter=": ">
             <!-- <text text-case="capitalize-first" variable="publisher-place"/> -->
@@ -4944,6 +4947,9 @@
         <if type="thesis" variable="publisher">
           <text variable="publisher"/>
         </if>
+        <else-if variable="old-publisher">
+          <text variable="publisher-place"/>
+        </else-if>
         <else-if variable="publisher">
           <group delimiter=": ">
             <!-- <text variable="publisher-place"/> -->
