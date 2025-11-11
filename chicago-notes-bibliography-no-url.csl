@@ -40,6 +40,7 @@
       <!-- Chicago omits 'by' from `verb-short` forms; it abbreviates only the most common roles -->
       <term name="advance-online-publication">ahead of print</term>
       <term name="anonymous">unsigned</term>
+      <term name="review-of">review of</term>
       <term form="verb-short" name="collection-editor">ed.</term>
       <term form="short" name="collection-number">
         <single>vol.</single>
