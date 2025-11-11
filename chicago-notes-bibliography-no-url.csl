@@ -33,6 +33,10 @@
   </info>
   <locale xml:lang="en">
     <terms>
+      <!-- Chicago now capitalizes prepositions longer than four letters. -->
+      <!-- The following takes the built-in list of stop words and removes any that are too long. -->
+      <!-- https://raw.githubusercontent.com/citation-style-language/schema/master/schemas/styles/stop-words.json -->
+      <style-options skip-words="a, amid, an, and, apud, as, at, atop, back to, but, by, c, ca, d', de, down, due to, et, far from, for, from, in, into, lest, like, near, next, nor, of, off, on, onto, or, out, over, per, plus, pro, qua, sans, so, such as, than, that of, the, thru, till, to, unto, up, upon, v., van, via, von, vs., with, yet"/>
       <!-- Chicago omits 'by' from `verb-short` forms; it abbreviates only the most common roles -->
       <term name="advance-online-publication">ahead of print</term>
       <term name="anonymous">unsigned</term>
