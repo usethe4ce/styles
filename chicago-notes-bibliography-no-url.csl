@@ -3081,9 +3081,6 @@
       <else-if variable="volume">
         <text macro="label-volume"/>
       </else-if>
-      <else>
-        <text macro="label-number-of-volumes"/>
-      </else>
     </choose>
   </macro>
   <macro name="identifier-volume-monographic-bib">
