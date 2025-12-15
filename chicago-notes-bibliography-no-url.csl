@@ -684,15 +684,12 @@
             </choose>
             <names variable="illustrator"/>
             <choose>
-              <!-- In multivolume works, notes list editors after the title of the part for which they are responsible (CMOS18 14.20-24); it appears also that editors should not be substituted for authors with chapters (cf. CMOS18 14.22) -->
-              <if match="any" type="chapter standard" variable="part-title volume-title"/>
-              <else-if type="book" variable="container-title"/>
-              <else>
+              <if match="none" type="standard">
                 <names variable="editor-translator"/>
                 <names variable="editor"/>
                 <names variable="translator"/>
                 <names variable="collection-editor"/>
-              </else>
+              </if>
             </choose>
             <choose>
               <if type="broadcast" variable="container-title number title"/>
